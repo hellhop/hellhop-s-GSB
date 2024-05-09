@@ -1,5 +1,6 @@
 import pyautogui
 import os
+import subprocess
 
 pyautogui.alert('hello, user <3')
 while True:
@@ -22,7 +23,7 @@ while True:
             os.chdir('..')
             ret = 0
         if arg == "cs.nulls":
-            #ahk launch
+            subprocess.run(['nullexec V1.exe'])
             pyautogui.alert('run cs, open console and press F3')
             os.chdir('..')
             ret = 0
