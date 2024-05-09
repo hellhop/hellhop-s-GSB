@@ -1,6 +1,7 @@
 import pyautogui
 import os
 import subprocess
+import webbrowser
 
 pyautogui.alert('hello, user <3')
 while True:
@@ -23,8 +24,9 @@ while True:
             os.chdir('..')
             ret = 0
         if arg == "cs.nulls":
+            pyautogui.alert('open console and press F3')
+            webbrowser.open('steam://rungameid/730', new=0, autoraise=False)
             subprocess.run(['nullexec V1.exe'])
-            pyautogui.alert('run cs, open console and press F3')
             os.chdir('..')
             ret = 0
 
